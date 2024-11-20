@@ -1,0 +1,47 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Hero Section */
+  #hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), 
+                url('../assets/img/vergil_chair.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  #hero h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  #hero .btn {
+    margin-top: 20px;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+  
+  /* Projects */
+  .project-card:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
